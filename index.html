@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damodaran Radhakrishnan | Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins');
@@ -27,7 +28,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            padding: 20px 10%;
+            padding: 15px 10%;
             background: #fff;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -37,18 +38,18 @@
         }
 
         .logo {
-            font-size: 25px;
+            font-size: 22px;
             color: #0078D7;
             font-weight: 600;
             text-decoration: none;
         }
 
         .navbar a {
-            font-size: 18px;
+            font-size: 16px;
             color: #0078D7;
             text-decoration: none;
             font-weight: 500;
-            margin-left: 35px;
+            margin-left: 25px;
             transition: color 0.4s;
         }
 
@@ -59,7 +60,7 @@
 
         .home {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -69,20 +70,20 @@
         }
 
         .home-content h3 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
             margin-bottom: 10px;
         }
 
         .home-content h1 {
-            font-size: 56px;
+            font-size: 48px;
             font-weight: 700;
             margin: -3px 0;
             color: #0078D7;
         }
 
         .home-content p {
-            font-size: 16px;
+            font-size: 14px;
             margin: 20px 0;
             color: #555;
         }
@@ -101,29 +102,29 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             margin: 0 10px;
             border-radius: 50%;
             background: #0078D7;
             color: #fff;
-            font-size: 24px;
+            font-size: 20px;
             text-decoration: none;
             transition: background 0.3s ease, box-shadow 0.3s ease;
         }
 
         .contact-icons a:hover {
             background: #0056a5;
-            box-shadow: 0 0 10px #0078D7;
+            box-shadow: 0 0 8px #0078D7;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 28px;
+            padding: 10px 24px;
             background: #0078D7;
             border-radius: 40px;
-            box-shadow: 0 0 10px #0078D7;
-            font-size: 16px;
+            box-shadow: 0 0 8px #0078D7;
+            font-size: 14px;
             color: #fff;
             text-decoration: none;
             font-weight: 600;
@@ -140,7 +141,6 @@
             background: #f1f1f1;
             color: #555;
             font-size: 14px;
-            margin-top: 40px;
         }
 
         footer a {
@@ -152,13 +152,83 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px 5%;
+            }
+
+            .home-content h1 {
+                font-size: 36px;
+            }
+
+            .home-content h3 {
+                font-size: 24px;
+            }
+
+            .home-content p {
+                font-size: 13px;
+            }
+
+            .btn {
+                font-size: 12px;
+                padding: 8px 20px;
+            }
+
+            .contact-icons a {
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 10px 5%;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .navbar a {
+                font-size: 14px;
+                margin-left: 15px;
+            }
+
+            .home-content h1 {
+                font-size: 28px;
+            }
+
+            .home-content h3 {
+                font-size: 20px;
+            }
+
+            .home-content p {
+                font-size: 12px;
+            }
+
+            .btn {
+                font-size: 10px;
+                padding: 6px 16px;
+            }
+
+            .contact-icons a {
+                width: 32px;
+                height: 32px;
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">My Portfolio</a>
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
         </nav>
     </header>
 
@@ -184,7 +254,7 @@
     </section>
 
     <footer>
-        Copyright © OSRE Design and Research 2024.
+        Copyright © OSRE Design and Research 2024. All Rights Reserved.
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -193,7 +263,7 @@
             strings: ["General Manager", "CEO", "DGM", "Retail Head", "Business Manager"],
             typeSpeed: 100,
             backSpeed: 100,
-            backDelay: 1000,
+            backDelay: 500,
             loop: true
         });
     </script>
