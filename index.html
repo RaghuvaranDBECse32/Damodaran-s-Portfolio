@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damodaran Radhakrishnan | Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'sans-serif';
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #0078D7;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #0078D7;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: color 0.4s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #0056a5;
+        }
+
+        .home {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px 10%;
+            background: #fdfdfd;
+        }
+
+        .home-content h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .home-content h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin: -3px 0;
+            color: #0078D7;
+        }
+
+        .home-content p {
+            font-size: 16px;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .contact-section {
+            margin-top: 20px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            border-radius: 50%;
+            background: #0078D7;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-icons a:hover {
+            background: #0056a5;
+            box-shadow: 0 0 10px #0078D7;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #0078D7;
+            border-radius: 40px;
+            box-shadow: 0 0 10px #0078D7;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #0056a5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            color: #555;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #0078D7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">My Portfolio</a>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Welcome</h3>
+            <h1>Damodaran Radhakrishnan</h1>
+            <h3>I am a <span class="multiple-text"></span></h3>
+            <p>I specialize in retail business development and operations. This website showcases my career journey and skills. Download my resume for detailed insights.</p>
+            <a href="resume.pdf" download class="btn">Download My Resume PDF</a>
+
+            <div class="contact-section">
+                <p>Feel free to connect with me:</p>
+                <div class="contact-icons">
+                    <a href="mailto:radhakrishnandamodaran@gmail.com" target="_blank" title="Email"><i class='bx bx-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/damodaran-radhakrishnan-b23672150/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="tel:+91-9600018557" target="_blank" title="Phone"><i class='bx bxs-phone'></i></a>
+                </div>
+                <p>Email: radhakrishnandamodaran@gmail.com</p>
+                <p>Phone: +91-9600018557</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Copyright © OSRE Design and Research 2024.
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".multiple-text", {
+            strings: ["General Manager", "CEO", "DGM", "Retail Head", "Business Manager"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+</body>
+</html>
